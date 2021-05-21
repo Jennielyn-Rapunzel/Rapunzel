@@ -1,0 +1,173 @@
+@font-face {
+    src: url(fonts/Better\ Together\ Script.ttf);
+    font-family: together;
+
+}
+
+@font-face{
+    src: url(fonts/Please\ write\ me\ a\ song.ttf);
+    font-family: write;
+}
+
+*{
+    padding: 0%;
+    margin: 0%;
+}
+
+body {
+  background-image: url(lessons/bg.png);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  margin: 0%;
+  padding: 0%;
+  width: 100%;
+  overflow-x: hidden  ;
+}
+
+
+h1{
+    color: #de8971;
+    line-height: 100px;
+    margin-top: -200px;
+    position: absolute;
+    margin-left: 100px;
+    text-align: center;
+    top: 50%;
+    width: 100%;
+    font-family: together;
+    font-size: 500%;
+
+}
+
+@keyframes animate{
+    from {left: 0px;}
+    to {left: 200px;}
+}
+#me{
+
+    margin-left: 20%;
+    margin-right: 20%;
+    border: 5px solid #5aa897;
+    vertical-align: middle;
+    line-height: 200px;
+    margin-top: 180px;
+    width: 20%;
+    max-width: 20%;
+    height: auto;
+}
+
+p{
+
+    margin-top: -100px;
+    position: absolute;
+    text-align: left ;
+    top: 50%;
+    width: 100%;
+    margin-left: 42%;
+    font-size: 30px;
+    font-family: write;
+}
+ .sidebar {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.3);
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+  }
+  
+  .sidebar a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #f8f5f1;
+    display: block;
+    transition: 0.3s;
+  }
+  
+  .sidebar a:hover {
+    color: #424642;
+  }
+  
+  .sidebar .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+    transition: 0.3s;
+    
+}
+  
+  .openbtn {
+    font-size: 20px;
+    cursor: pointer;
+    background: #9fe6a0;
+    color: #4aa96c;
+    padding: 10px 15px;
+    border: none;
+  }
+  
+  .openbtn:hover {
+    background: rgba(0, 0, 0, 0.);
+  }
+  
+  #main {
+    transition: margin-left .5s;
+    padding: 16px;
+  }
+  
+  @media screen and (max-height: 450px) {
+    .sidebar {padding-top: 15px;}
+    .sidebar a {font-size: 18px;}
+  }
+
+.sidebar .profile{
+    width: 190px;
+    border-radius: 100px;
+    height: 200px;
+    align-items: center;
+    margin-left: 30px;
+}
+
+h4{
+    color: #f8f5f1;
+    font-family: write;
+    font-size: 30px;
+    text-align: center;
+    
+}
+
+li{
+    border-style: solid;
+    background-color: rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    border: 1px solid #ffe5e2;
+    font-family: write;
+}
+
+.active {
+    background-color: green;
+    color: white;
+  }
+  
+  .dropdown-container {
+    display: none;
+    background-color: #262626;
+    padding-left: 8px;
+  }
+  
+  .fa-caret-down {
+    float: right;
+    padding-right: 8px;
+  }
+  
+  .self {
+  float: left;
+  width: 10%;
+  }

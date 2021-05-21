@@ -1,0 +1,68 @@
+@font-face {
+    font-family: hap;
+    src: url(Better_Together_Script.ttf);
+}
+
+*{
+    padding: 0%;
+    margin: 0%;
+}
+
+body {
+  background-image: url(lessons/bg.png);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+nav{
+    width: 250px;
+    position: absolute;
+    top: 0%; 
+    bottom: 0%;
+    background: rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    box-shadow: 5px 7px 10px rgba(0, 0, 0, .5)
+ }
+
+
+h1{
+    color: #de8971;
+    left: 0;
+    line-height: 100px;
+    margin-top: -200px;
+    position: absolute;
+    text-align: center;
+    top: 50%;
+    width: 100%;
+    animation: animate 5s infinite;
+    font-family: hap;
+
+}
+
+@keyframes animate{
+    from {left: 0px;}
+    to {left: 100px;}
+}
+#me{
+    width: 300px;
+    height: 300px;
+    margin-left: 20%;
+    margin-right: 20%;
+    border: 5px solid #5aa897;
+    vertical-align: middle;
+    line-height: 20px;
+    margin-top: 180px;
+}
+
+p{
+
+    margin-top: -100px;
+    position: absolute;
+    text-align:left ;
+    top: 50%;
+    width: 100%;
+    margin-left: 42%;
+    font-size: 25px;
+}
+
