@@ -4,43 +4,55 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About Jennie's E-portfolio</title>
+    <title>About Jennie's E-portfolio Finals</title>
     <link rel="stylesheet" href="design.css">
+    <link rel="stylesheet" href="media.css">
+    <script src="functions.js"></script>
 </head>
 <body>
-    <div id="mySidebar" class="sidebar">
-        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
-        <img src="lessons/camera.jpg" class="profile" alt="">
-        <h4>Jennielyn Heray</h4>
-    <nav>
-        <ul>
-            <li><a href="e-portfolio.html">Activites</a></li>
-            <li><a href="discrete.html">Lessons</a>
-                <li><a href="about.html">About Me</a></li>
-    <ul>
-    </div>
-    </nav>
-    <div id="main">
-        <button class="openbtn" onclick="openNav()">☯ Menu</button>
-    <script>
-        function openNav() {
-          document.getElementById("mySidebar").style.width = "250px";
-          document.getElementById("main").style.marginLeft = "250px";
-        }
-        
-        function closeNav() {
-          document.getElementById("mySidebar").style.width = "0";
-          document.getElementById("main").style.marginLeft= "0";
-        }
-        </script>
-    <h1>HELLO</h1>
-    <div class="me">
-    <img id ="me" src="lessons/me.jpg" alt="me">
-    <div class="self">
-        <p>I am Jennielyn P Heray, 20 years old from Makati City.<br> Im currently 1st year college at Rizal Technological <br> University
-            and my course is Information technoloy.<br> My hobbies to play volleyball, edit vidoes, photography <br> and
-            learning something new.
-        </p>
-    </div>
+
+    <!--- sidebar --->
+        <div id="mySidebar" class="sidebar">
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+                <img src="lessons/camera.jpg" class="profile" alt="">
+                <h4>Jennielyn Heray</h4>
+            <nav>
+                <ul>
+                        <li id="btn"><a href="e-portfolio.html">Activites</a></li>
+                        <li id="btn"><a href="discrete.html">Lessons</a>
+                        <li id="btn"><a href="about.html">About Me</a></li>
+                </ul>
+            </nav>
+        </div>
+    <!--- end sidebar --->
+
+    <!--- main --->
+        <div id="main">
+            <button class="openbtn" onclick="openNav()">☯ Menu</button>
+        </div>
+    <!--- end main --->
+
+        <!--- bg --->
+            <div class="bg">
+                <img src="lessons/bg.png">
+            </div>
+        <!--- bg --->
+        <!-- content --->
+            <div class="content" id="content">
+
+                        <li id="pic">
+                            <img src="lessons/me.jpg">
+                        </li>
+
+                        <li id="li-para">
+                            <p id="para">
+                                    I am Jennielyn P Heray, 20 years old from Makati City. Im currently 1st year college at Rizal Technological  University and my course is Information technoloy. My hobbies to play volleyball, edit vidoes, photography and learning something new.
+                            </p>
+                        </li>
+
+
+            </div>
+        <!--- end content --->
+
 </body>
 </html>

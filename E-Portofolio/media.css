@@ -1,0 +1,30 @@
+
+
+
+@media screen and (max-width: 662px){
+    .content li img{
+        width: 160px;
+        height:160px;
+    }
+
+    .content #li-para{
+        width:300px;
+        font-size: 1.5rem;
+    }
+
+    .sidebar{
+        background: rgba(0, 0, 0, 0.6);
+     }
+
+     @media screen and (max-width: 390px){
+
+
+        .content #li-para{
+             width:170px;
+            font-size: 1.3rem;
+        }
+
+    }
+}
+
+

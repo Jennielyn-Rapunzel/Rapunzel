@@ -10,21 +10,19 @@
 }
 
 *{
-    padding: 0%;
-    margin: 0%;
+    padding: 0;
+    margin: 0;
 }
 
-body {
-  background-image: url(lessons/bg.png);
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-size: cover;
-  margin: 0%;
-  padding: 0%;
-  width: 100%;
-  overflow-x: hidden  ;
+
+
+body{
+    overflow-x:hidden;
 }
 
+p{
+    font-family:write;
+}
 
 h1{
     color: #de8971;
@@ -44,30 +42,9 @@ h1{
     from {left: 0px;}
     to {left: 200px;}
 }
-#me{
 
-    margin-left: 20%;
-    margin-right: 20%;
-    border: 5px solid #5aa897;
-    vertical-align: middle;
-    line-height: 200px;
-    margin-top: 180px;
-    width: 20%;
-    max-width: 20%;
-    height: auto;
-}
 
-p{
 
-    margin-top: -100px;
-    position: absolute;
-    text-align: left ;
-    top: 50%;
-    width: 100%;
-    margin-left: 42%;
-    font-size: 30px;
-    font-family: write;
-}
  .sidebar {
     height: 100%;
     width: 0;
@@ -122,10 +99,7 @@ p{
     padding: 16px;
   }
   
-  @media screen and (max-height: 450px) {
-    .sidebar {padding-top: 15px;}
-    .sidebar a {font-size: 18px;}
-  }
+
 
 .sidebar .profile{
     width: 190px;
@@ -143,7 +117,7 @@ h4{
     
 }
 
-li{
+#btn{
     border-style: solid;
     background-color: rgba(0, 0, 0, 0.1);
     border-radius: 10px;
@@ -171,3 +145,39 @@ li{
   float: left;
   width: 10%;
   }
+
+  /* Changed / added */
+
+.bg img{
+        position:absolute;
+        top:0;
+        left:0;
+        width:100%;
+        height:100%;
+        z-index:-5;
+   }
+
+.content {
+    margin: 45px auto;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+.content li{
+    list-style-type:none;
+    padding: 5px;
+    text-align:justify;
+}
+
+.content #li-para{
+    width:700px;
+    padding:15px;
+    font-size: 1.9rem;
+}
+.content li img{
+    width: 300px;
+    height: 300px;
+    border-radius:50%;
+    border: 2px solid black;
+}
+
