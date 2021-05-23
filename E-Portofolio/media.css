@@ -1,6 +1,3 @@
-
-
-
 @media screen and (max-width: 662px){
     .content li img{
         width: 160px;
@@ -16,13 +13,33 @@
         background: rgba(0, 0, 0, 0.6);
      }
 
-     @media screen and (max-width: 390px){
 
+     @media screen and (max-width: 390px){
 
         .content #li-para{
              width:170px;
             font-size: 1.3rem;
         }
+        section .card{
+            width:380px;
+            height:280px;
+            margin-left: 20px;
+            margin-bottom: 5px;
+            perspective: 1500px;
+        }
+        section .card .box .contentBox div{
+            font-size: 13px;
+            text-align:justify;
+        }
+
+        /* para ito sa <p> yung lorem para pwede mabago size at font */
+        section .card .box .contentBox div p{
+
+        }
+        /* para naman sa <h2> or title */
+         section .card .box .contentBox div h2{
+
+         }
 
     }
 }
