@@ -98,6 +98,12 @@ h1{
     transition: margin-left .5s;
     padding: 16px;
   }
+
+ #test {
+    transition: margin-left .5s;
+    padding: 16px;  
+    background-color: #e8e7e3;
+ }
   
 
 
@@ -155,6 +161,7 @@ h4{
         width:100%;
         height:100%;
         z-index:-5;
+        background-color: #e8e7e3;
    }
 
 .content {
@@ -187,6 +194,7 @@ h4{
     display:flex;
     justify-content:center;
     align-items:center;
+    background-color: #e8e7e3;
 }
 
 
@@ -221,7 +229,7 @@ section .card .box{
 
 /* ito na yung sa hover kapag tinutok mouse */
 section .card:hover .box{
-    transform: rotateY(180deg);
+    transform: rotateY(360deg);
 }
 
 section .card .box .imgBOX{
@@ -248,20 +256,14 @@ section .card .box .contentBox{
     left:0;
     width: 100%;
     height: 300px;
-    background:black; /* CHANGE BACKGROUND COLOR YUNG BLACK TO AH */
+    background:#e4bad4; /* CHANGE BACKGROUND COLOR YUNG BLACK TO AH */
     backface-visibility:hidden;
     display:flex;
     justify-content:center;
     align-items:center;
     transform-style:preserve-3d;
-    transform: rotateY(-180deg);
+    transform: rotateY(180deg);
 }
-
-section .card .box .contentBox div{
-    transform-style:preserve-3d;
-    padding: 20px;
-    padding-right: 70px;
-    background:green; /* CHANGE BACKGROUND COLOR YUNG GREEN TO AH */
-    transform: translateZ(80px);
+section .card .box .contentBox div{ 
+    display:none;
 }
-
